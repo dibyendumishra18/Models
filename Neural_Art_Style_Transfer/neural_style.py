@@ -11,9 +11,9 @@ from CaffeLoader import loadCaffemodel
 import argparse
 parser = argparse.ArgumentParser()
 # Basic options
-parser.add_argument("-style_image", help="Style target image", default='examples/inputs/seated-nude.jpg')
+parser.add_argument("-style_image", help="Style target image", default='examples/inputs/starry_night_google.jpg')
 parser.add_argument("-style_blend_weights", default=None) 
-parser.add_argument("-content_image", help="Content target image", default='examples/inputs/tubingen.jpg')
+parser.add_argument("-content_image", help="Content target image", default='examples/inputs/Ashoka_University.jpg')
 parser.add_argument("-image_size", help="Maximum height / width of generated image", type=int, default=512)
 parser.add_argument("-gpu", help="Zero-indexed ID of the GPU to use; for CPU mode set -gpu = -1", type=int, default=0)
 
